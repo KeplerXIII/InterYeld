@@ -3,9 +3,9 @@ import types
 
 def flat_generator(list_of_lists):
 
-    for i in list_of_lists:
-        for x in i:
-            yield x
+    for elem in list_of_lists:
+        for sub_elem in elem:
+            yield sub_elem
 
 
 def test():
