@@ -4,8 +4,8 @@ import types
 def flat_generator(list_of_list):
     for i in list_of_list:
         if isinstance(i, list):
-            for sub_elem in flat_generator(i):
-                yield sub_elem
+            for z in flat_generator(i):
+                yield z
         else:
             yield i
 
